@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عن الشركة</title>
     <link rel="stylesheet" href="../style.css">
-        <link rel="icon" type="image/png" href="../images/logo1.png">
-
+    <link rel="icon" type="image/png" href="../images/logo1.png">
 
     <style>
         .about-container {
@@ -31,32 +30,50 @@
             margin-bottom: 20px;
         }
 
-        .contact-info {
+        /* تنسيق الصناديق */
+        .info-box, .contact-box {
+            background: #eef4ff;
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 25px;
+            border-right: 6px solid #005bb5;
+            border-left: 2px solid #bcd4ff;
+            border-top: 2px solid #d6e6ff;
+            border-bottom: 2px solid #d6e6ff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             text-align: right;
-            margin-top: 30px;
-            border-top: 2px solid #0078d7;
-            padding-top: 20px;
+            transition: 0.3s ease;
         }
 
-        .contact-info h3 {
-            color: #0078d7;
-            margin-bottom: 10px;
+        .info-box:hover, .contact-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
         }
 
-        .contact-info ul {
+        .info-box h3, .contact-box h3 {
+            color: #005bb5;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #bcd4ff;
+            padding-bottom: 8px;
+        }
+
+        .info-box ul, .contact-box ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
-        .contact-info li {
-            margin-bottom: 8px;
-            font-size: 16px;
-            color: #333;
+        .info-box li, .contact-box li {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #222;
         }
 
+        /* أيقونات التواصل */
         .social-icons {
             margin-top: 25px;
-            
+            text-align: center;
         }
 
         .social-icons a {
@@ -66,7 +83,7 @@
         }
 
         .social-icons a:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         .social-icons img {
@@ -88,31 +105,44 @@
                 نسعى لتقديم أحدث التقنيات وخدمات ما بعد البيع بأعلى جودة لضمان رضا عملائنا.
             </p>
 
-            <div class="contact-info">
+            <!-- معلومات الشركة -->
+            <div class="info-box">
+                <h3>معلومات الشركة</h3>
+                <ul>
+                    <li>🔧 التخصص: بيع وصيانة الأجهزة الإلكترونية</li>
+                    <li>⭐ خبرة في السوق الليبي</li>
+                    <li>🏬 نوفر خدمات ما بعد البيع والدعم الفني</li>
+                </ul>
+            </div>
+
+            <!-- اتصل بنا -->
+            <div class="contact-box">
                 <h3>اتصل بنا</h3>
                 <ul>
-                    <li>📞 الهاتف:  0941000669</li>
+                    <li>📞 الهاتف: 0941000669</li>
                     <li>📧 البريد الإلكتروني: alnukhbaa10@gmail.com</li>
                     <li>📍 العنوان: بنغازي، ليبيا</li>
                 </ul>
             </div>
 
+            <!-- التواصل الاجتماعي -->
             <div class="social-icons">
                 <a href="https://www.facebook.com/share/17qye2883Y/?mibextid=wwXIfr" target="_blank">
                     <img src="../images/facebook.png" alt="Facebook">
                 </a>
+
                 <a href="https://wa.me/+218941000669" target="_blank">
-                    <img src="../images/whatsapp.webp" alt="Instagram">
+                    <img src="../images/whatsapp.webp" alt="Whatsapp">
                 </a>
+
                 <a href="https://www.tiktok.com/@alnokhba2024?_r=1&_t=ZM-91ClYUbmoLU" target="_blank">
-                    <img src="../images/tiktok.png" alt="Facebook">
+                    <img src="../images/tiktok.png" alt="Tiktok">
+                </a>
             </div>
+
         </div>
     </div>
 
     <script src="../script.js"></script>
 </body>
 </html>
-
-
-
